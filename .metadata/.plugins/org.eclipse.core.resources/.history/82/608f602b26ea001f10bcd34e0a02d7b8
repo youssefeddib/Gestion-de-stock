@@ -1,0 +1,5 @@
+package net.javaguids.Produitgesion.dao;
+
+public class ProduitDAO {
+
+}

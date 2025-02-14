@@ -1,0 +1,11 @@
+INDEX VERSION 1.134
+C:\Users\enaa-\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1662863883.index
+\Application du gestion\src\main\java
+C:\Users\enaa-\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1927865260.index
+\stock\src\main\java
+C:\Users\enaa-\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3945969993.index
+\application gestion de stock\src\main\java
+C:\Users\enaa-\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\513781390.index
+\Application du gestion\src\main\java
+C:\Users\enaa-\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2008567561.index
+\Application du gestion\src\main\java

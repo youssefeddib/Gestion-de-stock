@@ -1,0 +1,35 @@
+
+<%@ page import="java.sql.*" %>
+<html>
+<head><title>Gestion de Stock</title></head>
+<body>
+    <h2>Liste des Produits</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Quantité</th>
+        </tr>
+        <% 
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/stock_db", "root", "");
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM products");
+            while(rs.next()) {
+        %>
+        <tr>
+            <td><%= rs.getInt("id") %></td>
+            <td><%= rs.getString("name") %></td>
+            <td><%= rs.getInt("quantity") %></td>
+        </tr>
+        <% } conn.close(); %>
+    </table>
+    
+    <h2>Ajouter un Produit</h2>
+    <form action="StockServlet" method="post">
+        Nom: <input type="text" name="name" required><br>
+        Quantité: <input type="number" name="quantity" required><br>
+        <input type="submit" value="Ajouter">
+    </form>
+</body>
+</html>
