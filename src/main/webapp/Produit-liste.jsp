@@ -21,7 +21,7 @@
 
 <div class="container">
     <h2 class="text-center">Liste des Produits</h2>
-    <a href="new" class="btn btn-primary mb-3">Ajouter Nouveau Produit</a>
+    <a href="new" class="btn btn-success mb-3">Ajouter Nouveau Produit</a>
 
     <table class="table table-bordered">
         <thead class="thead-dark">
@@ -29,7 +29,7 @@
                 <th>ID</th>
                 <th>Nom</th>
                 <th>Description</th>
-                <th>Quantité</th>
+                <th>Quantity</th>
                 <th>Prix</th>
                 <th>Categorie</th>
                 <th>Actions</th>
@@ -44,11 +44,7 @@
                     <td><c:out value="${produit.quantite}" /></td>
                     <td><c:out value="${produit.prix}" /></td>
                     <td><c:out value="${produit.categorie}" /></td>
-                    <td>
-                        <a href="edit?id=<c:out value='${produit.id}' />" class="btn btn-warning btn-sm">Modifier</a>
-                        <a href="delete?id=<c:out value='${produit.id}' />" class="btn btn-danger btn-sm" 
-                           onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce produit ?');">Supprimer</a>
-                    </td>
+                   
                 </tr>
             </c:forEach>
         </tbody>

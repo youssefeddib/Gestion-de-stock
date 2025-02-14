@@ -23,8 +23,7 @@
         <div class="card-body">
             <h2>
                 <c:choose>
-                    <c:when test="${Produit != null}">Modifier Produit</c:when>
-                    <c:otherwise>Ajouter Nouveau Produit</c:otherwise>
+                    <c:otherwise>Ajouter Nouveux Produit</c:otherwise>
                 </c:choose>
             </h2>
 
@@ -61,7 +60,7 @@
                 </fieldset>
 
                 <fieldset class="form-group">
-                    <label>Catégorie de Produit</label>
+                    <label>Categorie de Produit</label>
                     <input type="text" name="categorie" class="form-control"  required />
                 </fieldset>
 
