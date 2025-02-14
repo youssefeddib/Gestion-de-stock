@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Application du gestion</title>
+<title>Insert title here</title>
 </head>
 <body>
-produit
+
 </body>
 </html>
