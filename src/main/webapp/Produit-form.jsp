@@ -23,7 +23,7 @@
         <div class="card-body">
             <h2>
                 <c:choose>
-                    <c:otherwise>Ajouter Nouveux Produit</c:otherwise>
+                    <c:otherwise>Ajouter Nouveau Produit</c:otherwise>
                 </c:choose>
             </h2>
 
