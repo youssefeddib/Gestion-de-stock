@@ -27,45 +27,41 @@
                 </c:choose>
             </h2>
 
-            <form action="${Produit != null ? 'update' : 'insert'}" method="post">
-                <c:if test="${Produit != null}">
-                    <input type="hidden" name="id" value="<c:out value='${Produit.id}' />" />
-                </c:if>
+         <form action="${pageContext.request.contextPath}/${Produit != null ? 'produits/update' : 'produits/insert'}" method="post">
+    
+  
+    <c:if test="${Produit != null}">
+        <input type="hidden" name="id" value="<c:out value='${Produit.id}' />" />
+    </c:if>
 
-                <c:if test="${Produit == null}">
-                    <fieldset class="form-group">
-                        <label>Id de Produit</label>
-                        <input type="text" name="id" class="form-control" required />
-                    </fieldset>
-                </c:if>
+    <fieldset class="form-group">
+        <label>Nom de Produit</label>
+        <input type="text" name="nom" class="form-control" value="<c:out value='${Produit.nom}' />" required />
+    </fieldset>
 
-                <fieldset class="form-group">
-                    <label>Nom de Produit</label>
-                    <input type="text" name="nom" class="form-control"  required />
-                </fieldset>
+    <fieldset class="form-group">
+        <label>Description de Produit</label>
+        <input type="text" name="description" class="form-control" value="<c:out value='${Produit.description}' />" required />
+    </fieldset>
 
-                <fieldset class="form-group">
-                    <label>Description de Produit</label>
-                    <input type="text" name="description" class="form-control" required />
-                </fieldset>
+    <fieldset class="form-group">
+        <label>Quantité de Produit</label>
+        <input type="number" name="quantite" class="form-control" value="<c:out value='${Produit.quantite}' />" required />
+    </fieldset>
 
-                <fieldset class="form-group">
-                    <label>Quantité de Produit</label>
-                    <input type="number" name="quantite" class="form-control" required />
-                </fieldset>
+    <fieldset class="form-group">
+        <label>Prix de Produit</label>
+        <input type="number" name="prix" class="form-control" value="<c:out value='${Produit.prix}' />" required />
+    </fieldset>
 
-                <fieldset class="form-group">
-                    <label>Prix de Produit</label>
-                    <input type="number" name="prix" class="form-control" required />
-                </fieldset>
+    <fieldset class="form-group">
+        <label>Categorie de Produit</label>
+        <input type="text" name="categorie" class="form-control" value="<c:out value='${Produit.categorie}' />" required />
+    </fieldset>
 
-                <fieldset class="form-group">
-                    <label>Categorie de Produit</label>
-                    <input type="text" name="categorie" class="form-control"  required />
-                </fieldset>
-
-                <button type="submit" class="btn btn-success">Sauvegarder</button>
-            </form>
+    <button type="submit" class="btn btn-success">Sauvegarder</button>
+</form>
+         
         </div>
     </div>
 </div>

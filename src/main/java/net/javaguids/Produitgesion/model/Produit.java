@@ -5,13 +5,13 @@ public class Produit {
     private String nom;
     private String description;
     private int quantity;
-    private double prix; // تغيير int إلى double لضمان الدقة
+    private double prix;
     private String categorie;
 
-    // ✅ Constructor فارغ
+   
     public Produit() {}
 
-    // ✅ Constructor كامل
+    
     public Produit(int id, String nom, String description, int quantity, double prix, String categorie) {
         this.id = id;
         this.nom = nom;
@@ -21,7 +21,7 @@ public class Produit {
         this.categorie = categorie;
     }
 
-    // ✅ Getters & Setters
+    
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
@@ -40,7 +40,7 @@ public class Produit {
     public String getCategorie() { return categorie; }
     public void setCategorie(String categorie) { this.categorie = categorie; }
 
-    // ✅ طباعة الكائن أثناء التصحيح
+    
     @Override
     public String toString() {
         return "Produit{" + "id=" + id + ", nom='" + nom + '\'' + ", description='" + description + '\'' +
